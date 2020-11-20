@@ -23,6 +23,13 @@ form.addEventListener("submit", event => {
     const password = generatePassword(characterCount, includeUppercase, includeLowercase, includeNumbers, includeSpecialCharacters)
 })
 
+// Add ASCII character codes for constants.
+const UPPERCASE_CHAR_CODES = ascendingArray(65, 90)
+const LOWERCASE_CHAR_CODES = ascendingArray(97, 122)
+const NUMBER_CHAR_CODES = ascendingArray(48, 57)
+const SPECIAL_CHAR_CODES = ascendingArray ()
+
+
 // Call function using ASCII character codes.
 function generatePassword(characterCount, includeUppercase, includeLowercase, includeNumbers, includeSpecialCharacters) {String.fromCharCode(65)
 
