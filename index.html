@@ -14,9 +14,12 @@
 		<form class="form">
 			<label for="characterCountNumber">Number of characters</label>
 			
-	<div class="character-count-container">
+			<!-- User is prompted for length of password. User selects length of password using slider or arrow. -->
+			<div class="character-count-container">
+			<!-- Length must be at least 8 and no more than 128 characters -->
 			<input type="range" min="8" max="128" value="8" id="characterCountRange">
 			<input class="number-input" type="number" min="8" max="128" id="characterCountNumber">
+		<!-- Prompts for password critera include lowercase letters, uppercase letters, numbers, and special characters. User selects which criteria to include in password.-->
 		</div>
 			<label for="">Include uppercase?</label>
 			<input type="checkbox" id="includeUppercase">
@@ -25,6 +28,7 @@
 			<label for="">Include numbers?</label>
 			<input type="checkbox" id="includeNumbers">
 			<label for="">Include special characters?</label>
+			<!-- When all prompts are answered, the password is written to the page. -->
 			<input type="checkbox" id="includeSpecialCharacters">
 			<button class="button" type="submit">Generate password</button> 
 		</form>
