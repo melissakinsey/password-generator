@@ -1,0 +1,120 @@
+
+body {
+	background-color: bisque;
+	margin: 0;
+	color: black;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Verdana;
+}
+.container {
+	background-color: #fc9898;
+	padding: 3rem;
+	border-radius: 1rem;
+	border: 3px #bd6f6f;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.form {
+	display: grid;
+	grid-template-columns: auto auto;
+	row-gap: 1rem;
+	column-gap: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	margin: 0;
+	text-align: center;
+}
+
+label {
+	font-weight: bold;
+}
+
+.character-count-container {
+	display: flex;
+	align-items: center;
+}
+.number-input {
+	width: 2rem;
+	margin: .5rem;
+	background-color: bisque;
+	border: .5px solid #bd6f6f;
+	border-radius: .5rem;
+}
+
+.show-password {
+	background-color: white;
+	color: bisque;
+	padding: 1rem;
+	border: 1px solid #bd6f6f;
+	height: 2rem;
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	word-break: break-all;
+	border-radius: .5rem;
+}
+.button {
+	grid-column: span 2;
+	background-color: bisque;
+	border: 3px #bd6f6f;
+	padding: .5rem 1rem;
+	font-family: Verdana;
+	font-size: 20px;
+	font-weight: bold;
+	/* Turn cursor into hand on hover */
+	cursor: pointer;
+	border-radius: .5rem;
+}
+/* Lighten button background on hover. */
+.button:hover {
+background-color: #fbebda;
+}
+/* Remove default styling on slider. */
+input[type="range"] {
+	-webkit-appearance: none;
+   }
+   
+input[type="range"]:focus {
+	outline: none;
+   }
+/* Add custom styling to slider. */
+input[type="range"]::-webkit-slider-runnable-track {
+	background: #bd6f6f;
+	height: 5px;
+	outline: 3px solid bisque;
+   }
+   
+   input[type="range"]::-moz-range-track {
+	background: tomato;
+	height: 5px;
+	border: 2px bisque;
+	box-shadow: 2px;
+   }
+   input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 16px;
+	width: 16px;
+	color: #bd6f6f;
+	margin-top: -5px;
+	border-radius: 100%;
+	border: 6px solid bisque;
+	align-items: center;
+}
+   
+   input[type="range"]::-moz-range-thumb {
+	height: 15px;
+	width: 15px;
+	background-color: #bd6f6f;
+	margin-top: -5px;
+	border-radius: .5rem;
+   }
+  
