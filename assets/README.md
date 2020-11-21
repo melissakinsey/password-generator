@@ -20,6 +20,8 @@ The password must include the following features:
 
 Notes on my password generator
 
+ !['sample-password on password generator'](/assets/password-generator.png)
+
 *Chose background color and page color to match my portfolio
 *Used checkboxes to prompt user for password criteria
 *Validated the HTML with https://validator.w3.org/nu/#textarea
