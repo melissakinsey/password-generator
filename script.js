@@ -17,7 +17,7 @@ const SPECIAL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
         ).concat(
             arrayFromLowToHigh(123, 126)
             )
-             
+            
             // Set up event listener to sync number selected in box with number selected on slider.
             characterCountNumber.addEventListener("input", syncCharacterCount)
             characterCountRange.addEventListener("input", syncCharacterCount)
@@ -35,21 +35,21 @@ const SPECIAL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
                 
                 const password = generatePassword(characterCount, includeUppercase, includeNumbers, includeSpecial)
                 const passwordDisplay = password
-                console.log("The password is " + passwordDisplay)
-            })
+                passwordDisplayElement.innerText = passwordDisplay})
             
             function generatePassword(characterCount, includeUppercase, includeNumbers, includeSpecial) {
                 let charCodes = LOWERCASE_CHAR_CODES
                 if (includeUppercase) charCodes = charCodes.concat (UPPERCASE_CHAR_CODES)
                 if (includeNumbers) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
                 if (includeSpecial) charCodes.concat(SPECIAL_CHAR_CODES)
-
+                
                 
                 const passwordCharacters = []
                 for (let i = 0; i < characterCount; i++) {
                     const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
                     passwordCharacters.push(String.fromCharCode(characterCode))
                 }
+
                 return passwordCharacters.join("")
             }
             
@@ -67,9 +67,7 @@ const SPECIAL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
                 characterCountRange.value = value
             }
             
-            passwordDisplayElement.inner = passwordDisplay
-            
-            
+        
             
             
             
