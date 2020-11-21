@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="script.js" defer></script>
-	<link rel="stylesheet" href="style.css">
-	<title class="title">Password Generator</title>
-</head>
-<body>
-	<div class="container">
-		<h1>Password Generator</h1>
-		<h3 class="show-password">password</h3>
-		<form id="password-generator-form" class="form">
-			<label for="characterCountNumber">Number of characters</label>
-			
-			<!-- User is prompted for length of password. User selects length of password using slider or arrow. -->
-			<div class="character-count-container">
-			<!-- Length must be at least 8 and no more than 128 characters -->
-			<input type="range" min="8" max="128" value="8" id="characterCountRange">
-			<input class="number-input" type="number" min="8" max="128" id="characterCountNumber">
-		<!-- Prompts for password critera include lowercase letters, uppercase letters, numbers, and special characters. User selects which criteria to include in password.-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="script.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+		<!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com"> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title class="title">Password Generator</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Password Generator</h1>
+			<h2 class="password-display" id="passwordDisplay">password</h2>
+			<form id="password-generator-form" class="form">
+				<label for="characterCountNumber">Number of characters</label>
+
+				<!-- User is prompted for length of password. User selects length of password using slider or arrow. -->
+				<div class="character-count-container">
+					<!-- Length must be at least 8 and no more than 128 characters -->
+					<input
+						type="range"
+						min="8"
+						max="128"
+						value="8"
+						id="characterCountRange"
+					/>
+					<input
+						class="number-input"
+						type="number"
+						min="8"
+						max="128"
+						id="characterCountNumber"
+					/>
+					<!-- Prompts for password critera include lowercase letters, uppercase letters, numbers, and special characters. User selects which criteria to include in password.-->
+				</div>
+				<label for="">Include uppercase?</label>
+				<input type="checkbox" id="includeUppercase" />
+				<label for="">Include lowercase?</label>
+				<input type="checkbox" id="includeLowercase" />
+				<label for="">Include numbers?</label>
+				<input type="checkbox" id="includeNumbers" />
+				<label for="">Include special characters?</label>
+				<!-- When all prompts are answered, the password is written to the page. -->
+				<input type="checkbox" id="includeSpecialCharacters" />
+				<button class="button" type="submit">Generate password</button>
+			</form>
 		</div>
-			<label for="">Include uppercase?</label>
-			<input type="checkbox" id="includeUppercase">
-			<label for="">Include lowercase?</label>
-			<input type="checkbox" id="includeLowercase">
-			<label for="">Include numbers?</label>
-			<input type="checkbox" id="includeNumbers">
-			<label for="">Include special characters?</label>
-			<!-- When all prompts are answered, the password is written to the page. -->
-			<input type="checkbox" id="includeSpecialCharacters">
-			<button class="button" type="submit">Generate password</button> 
-		</form>
-	</div>
-</body>
+	</body>
 </html>
