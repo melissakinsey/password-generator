@@ -2,29 +2,24 @@
 
 ## Description
 
-As our third homework assignment, we were asked to create create an application an employee could use to generate a random password based on specified criteria. 
+As our third homework assignment, we were asked to create create an application an employee could use to generate a random password, based on specified criteria. 
 
-This app must meet the following requirements:
+The app must meet the following requirements:
 *Feature dynamically updated HTML and CSS powered by JavaScript
 *Have a clean, polished, responsive user interface
 *Prompt the user to select password criteria
-
-The password must include the following features:
-*A clickable button
-*An option to use special characters
-*Prompts for other password criteria, including numbers and uppercase and lowercase letters
-*A length of at least 8 but no more than 128 characters
-*A requirement that the user select at least one character type 
+*Offer the option to use special characters
+*Allow prompts for other password criteria, including numbers and uppercase letters
+*Have a length of at least 8 but no more than 128 characters
+*Require that the user select at least one character type 
 *Input validation
 *Display in an alert or on screen.
 
-Notes on my password generator
+![Password generator with short password](password-generator.jpg)
 
- !['sample-password on password generator'](/assets/password-generator.png)
+Height of window expands to fit longer passwords.
 
-*Chose background color and page color to match my portfolio
-*Used checkboxes to prompt user for password criteria
-*Validated the HTML with https://validator.w3.org/nu/#textarea
+![Password generator with longer password](password-generator-with-longer-password.jpg)
 
 ## Credits
 
@@ -33,7 +28,8 @@ Credit is due to the following:
 *My tutor, Alyssa Schmalenberger
 *Our amazing little "We Got This!" study group (#study-group-1")!
 *ASCII character conversion table, courtesy Wikimedia.
-*"Build a Password Generator" tutorial by WebDevSimplified: https://www.youtube.com/watch?v=iKo9pDKKHnc
+*Google Fonts: "Work Sans" font.
+*"Build a Password Generator" tutorial by WebDevSimplified 
 
 ## License
 

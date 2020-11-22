@@ -8,7 +8,8 @@ body {
 	align-items: center;
 	font-family: "Work Sans";
 	font-weight: 300;
-	}
+}
+
 .container {
 	background-color: #cae3e9;
 	padding: 3rem;
@@ -19,6 +20,7 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
 .form {
 	display: grid;
 	grid-template-columns: auto auto;
@@ -47,7 +49,7 @@ h1 {
 	font-weight: 400;
 }
 
-h3 {
+h2 {
 	font-family: "Work Sans";
 	font-weight: 100;
 }
@@ -56,6 +58,8 @@ h3 {
 	display: flex;
 	align-items: center;
 }
+
+
 .number-input {
 	width: 2rem;
 	margin: .5rem;
@@ -69,7 +73,7 @@ h3 {
 	color: #3ebdb6;
 	padding: 1rem;
 	border: 1px solid #cae3e9;
-	height: 2rem;
+	max-height: 6rem;
 	width: 350px;
 	display: flex;
 	justify-content: center;
@@ -77,6 +81,7 @@ h3 {
 	word-break: break-all;
 	border-radius: .5rem;
 }
+
 button.button {
 	grid-column: span 2;
 	background-color: #47d5cd;
@@ -86,37 +91,41 @@ button.button {
 	color: white;
 	font-size: 20px;
 	font-weight: 400;
-	/* color: black; */
-	/* Turn cursor into hand on hover */
+	/* Turns cursor into hand on hover */
 	cursor: pointer;
 	border-radius: .5rem;
 }
+
 /* Lighten button background on hover. */
 .button:hover {
-background-color: #9adad6;
+	background-color: #9adad6;
 }
+
 /* Remove default styling on slider. */
 input[type="range"] {
 	-webkit-appearance: none;
-   }
-   
+}
+
 input[type="range"]:focus {
 	outline: none;
-   }
+}
 /* Add custom styling to slider. */
+
 input[type="range"]::-webkit-slider-runnable-track {
 	background: #47d5cd;
 	height: 5px;
 	outline: 3px solid #3ebdb6;
-   }
-   
-   input[type="range"]::-moz-range-track {
+}
+
+
+input[type="range"]::-moz-range-track {
 	background: white;
 	height: 5px;
 	border: 2px #9adad6;
 	box-shadow: 2px;
-   }
-   input[type="range"]::-webkit-slider-thumb {
+}
+
+input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	height: 16px;
 	width: 16px;
@@ -126,11 +135,11 @@ input[type="range"]::-webkit-slider-runnable-track {
 	border: 6px solid #3ebdb6;
 	align-items: center;
 }
-   
-   input[type="range"]::-moz-range-thumb {
+
+input[type="range"]::-moz-range-thumb {
 	height: 15px;
 	width: 15px;
 	background-color: #47d5cd;
 	margin-top: -5px;
 	border-radius: .5rem;
-   }
+}
