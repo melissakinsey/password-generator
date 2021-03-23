@@ -15,11 +15,11 @@ The app must meet the following requirements:
 *Input validation
 *Display in an alert or on screen.
 
-![Password generator with short password](password-generator.jpg)
+![Password generator with short password](assets/password-generator.jpg)
 
 Height of window expands to fit longer passwords.
 
-![Password generator with longer password](password-generator-with-longer-password.jpg)
+![Password generator with longer password](assets/password-generator-with-longer-password.jpg)
 
 ## Credits
 
